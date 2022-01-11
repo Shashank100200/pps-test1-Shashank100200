@@ -3,12 +3,12 @@
 <br> 1.	Write a program to Add two numbers
 <br> Functions
 <br> 2.	Add two number using 4 function	using Pass by value
-		<br>int input();
+		<br >int input();
 		<br> int add(int a, int b);
 		<br> void output(int a, int b, int sum);
 		<br> input:
 		<br>1
-		3r>Add two numbers using 4 functions and  2
+		3r>Add two numbers using 4  functions and  2
 		<br> output:
 		<br> sum of 1+2 is 3
 	
