@@ -1,11 +1,33 @@
-#include<stdio.h>
-int main()
-{
-  int num1,num2;
-  float sum;
-  printf("enter the two numbers\n");
-   scanf("%d%d",&num1,&num2);
-  sum=num1 +  num2;
-  printf("addition of %d + %d is=%f\n" ,num1,num2,sum);
-  return 0;
-}
+(gdb) b main
+Breakpoint 1 at 0x772: file p1final.c, line 3.
+(gdb) r
+Starting program: /home/runner/pps-test1-Shashank100200-6/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p1final.c:3
+3   {
+(gdb) n
+6     printf("enter the two numbers\n");
+(gdb) n
+enter the two numbers
+7      scanf("%d%d",&num1,&num2);
+(gdb) n
+22
+55
+8     sum=num1 +  num2;
+(gdb) n
+9     printf("addition of %d + %d is=%f\n" ,num1,num2,sum);
+(gdb) p num1
+$1 = 22
+(gdb) p num2
+$2 = 55
+(gdb) n
+addition of 22 + 55 is=77.000000
+10  }
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 403] will be killed.
+
+Quit anyway? (y or n) y
+ 
