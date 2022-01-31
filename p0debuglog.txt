@@ -1,6 +1,17 @@
-#include<stdio.h>
-int main()
-{
-  printf("my name is shashank\n");
-  return 0;
-} 
+Breakpoint 1 at 0x63e: file p0final.c, line 4.
+(gdb) r
+Starting program: /home/runner/pps-test1-Shashank100200-6/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p0final.c:4
+4     printf("my name is shashank\n");
+(gdb) n
+my name is shashank
+5     return 0;
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 40] will be killed.
+
+Quit anyway? (y or n) y
+ 
