@@ -1,0 +1,39 @@
+Breakpoint 1, main () at p5original.c:17
+17  {
+(gdb) n
+19  input(&a,&b,&c);
+(gdb) s
+input (a=0x7ffccfb1b2a8, b=0x7ffccfb1b2ac, c=0x7ffccfb1b2b0) at p5original.c:13
+13    printf("enter the three numbers\n");
+(gdb) n
+enter the three numbers
+14    scanf("%d%d%d",a,b,c);
+(gdb) n
+22
+55
+88
+15  }
+(gdb) n
+main () at p5original.c:20
+20  cmp(a,b,c,&L);
+(gdb) s
+cmp (a=22, b=55, c=88, L=0x7ffccfb1b2b4) at p5original.c:4
+4     if(a>b && a>c)
+(gdb) n
+6     else if(b>a && b>c)
+(gdb) n
+9     *L=c;
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:21
+21  printf("the Largest among the is %d\n",L);
+(gdb) p L
+$1 = 88
+(gdb) n
+the Largest among the is 88
+22  return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 31) exited normally]
+(gdb) q
