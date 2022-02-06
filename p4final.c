@@ -22,4 +22,5 @@ int main()
   b=input();
   c=input();
   printf("the greatest value is %d\n",cmp(a,b,c));
+  return 0;
 }

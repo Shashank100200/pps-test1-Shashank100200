@@ -3,7 +3,7 @@ void cmp(int a, int b,int c,int *L)
 {
   if(a>b && a>c)
   *L=a;
-  else if(b>a && b>c)
+  else if(b>c)
   *L=b;
   else
   *L=c;
