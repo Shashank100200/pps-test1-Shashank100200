@@ -57,4 +57,3 @@ A debugging session is active.
     Inferior 1 [process 33] will be killed.
 
 Quit anyway? (y or n) y
- 
